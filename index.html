@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback, OG Fortnite</title>
+        <style>
+            label, legend {
+              display: block;
+              margin: 10px;
+              margin-bottom: 30px;
+              font-size: 1.5em;
+            }
+            body {
+                background-image: url("https://img.freepik.com/free-vector/diagonal-abstract-line-texture_1409-1141.jpg?w=1380&t=st=1700215467~exp=1700216067~hmac=2ca4ef1654b0a486f118ffec20226e37560be9165b1e54bb6ea1759d078348b5");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: aliceblue;
+                font-weight: bold;
+                text-align: center;
+            }
+            form {background-color: rgba(0, 0, 0, 0.6);}
+            .form-element {
+                margin: 0 auto 0rem auto;
+                padding: 0.25rem;
+            }
+            input, textarea, select {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                font-size: large;
+                width: 600px;
+                height: 40px;
+                border-radius: 10px;
+                resize: vertical;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title"><b>Feedback form for OG Fortnite</b></h1>
+        <p id="description"><i>Here you can give us feedback of Fortnite's OG Edition</i></p>
+        <hr>
+        <form id="survey-form">
+            <div class="form-element">
+                <label id="name-label" for="name">Name 
+                    <br><input type="text" id="name" placeholder="Enter your name (required)" required /></label>
+            </div>
+            <div class="form-element">
+                <label id="email-label" for="email">Email 
+                    <br><input type="email" id="email" placeholder="Enter you email (required)" required/></label>
+            </div>
+            <div class="form-element">
+                <label id="number-label" for="number">Rate OG Fortnite out of 10 <br>
+                    <input type="number" id="number" min="0" max="10" placeholder="e.g.(1, 2, 3, 4, etc.)" required/></label>
+            </div>
+            <div class="form-element">
+                <label>Favourite POI?<br><select id="dropdown">
+                    <option>None</option>
+                    <option>Shifty Shafts</option>
+                    <option>I am a noob</option>
+                </select></label>
+            </div>
+            <div class="form-element">
+                <legend style="margin-bottom: 0px; margin: 0px;">Chapter 1 player?</legend>
+                <label style="display: inline;"><input style="width: 30px;" type="radio" name="Player" value=" Yes"/> Yes</label>
+                <label style="display: inline;"><input style="width: 30px; margin-left: 10%;" type="radio" name="Player" value=" No" checked/> No</label>
+            </div>
+            <div>
+                <label style="margin-bottom: 10px;">Type of Player?</label>
+                <label style="margin-bottom: 0px; margin: 0px;"><input type="checkbox" value="Casual" style="margin-top: 0px; width: 30px;" checked/>Casual</label>
+                <label style="margin-bottom: 0px; margin: 0px;"><input type="checkbox" value="Competitive" style="margin-top: 0px; width: 30px; margin-left: 75px;"/>Competitive</label>
+                <label style="margin-bottom: 0px; margin: 0px;"><input type="checkbox" value="Creative" style="margin-top: 0px; width: 30px; margin-left: 25px;"/>Creative</label>
+            </div>
+            <div class="form-element">
+                <label>Queries?<br><textarea placeholder="Write any queries here..."></textarea></label>
+            </div>
+            <input style="border-radius: 10px;background-color:darkolivegreen; color: aliceblue; height: 50px;border-style: solid; font-size: large; font-weight: bold; font-stretch:expanded;" 
+            id="submit" type="submit" value="SUBMIT"/>
+        </form>
+    </body>
+</html>
